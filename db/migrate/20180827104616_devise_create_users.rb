@@ -38,7 +38,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
       t.integer :zip_code
       t.string :city
       t.integer :phone_number
-
+      t.belongs_to :product, index: true
       t.timestamps null: false
     end
 
