@@ -7,7 +7,7 @@
 
 				<!-- Slider Item -->
 				<div class="owl-item home_slider_item">
-					<div class="home_slider_background" style="background-image:url(<%= asset_path 'home_slider_1.jpg' %>)"></div>
+					<div class="home_slider_background" style="background-image: url(<%= asset_path 'home_slider_1.jpg' %>)"></div>
 					<div class="home_slider_content_container">
 						<div class="container">
 							<div class="row">
@@ -25,7 +25,7 @@
 
 				<!-- Slider Item -->
 				<div class="owl-item home_slider_item">
-					<div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)"></div>
+					<div class="home_slider_background" style="background-image: url(<%= asset_path 'home_slider_1.jpg' %>)"></div>
 					<div class="home_slider_content_container">
 						<div class="container">
 							<div class="row">
@@ -43,7 +43,7 @@
 
 				<!-- Slider Item -->
 				<div class="owl-item home_slider_item">
-					<div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)"></div>
+					<div class="home_slider_background" style="background-image: url(<%= asset_path 'home_slider_1.jpg' %>)"></div>
 					<div class="home_slider_content_container">
 						<div class="container">
 							<div class="row">
@@ -216,7 +216,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="avds_xl_container clearfix">
-						<div class="avds_xl_background" style="background-image:url(images/avds_xl.jpg)"></div>
+						<div class="avds_xl_background" style="background-image: url(<%= asset_path 'avds_xl.jpg' %>)"></div>
 						<div class="avds_xl_content">
 							<div class="avds_title">Amazing Devices</div>
 							<div class="avds_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus.</div>
@@ -228,6 +228,8 @@
 		</div>
 	</div>
 
+<p>avds_xl.jpg</p>
+
 	<!-- Icon Boxes -->
 
 	<div class="icon_boxes">
@@ -237,7 +239,7 @@
 				<!-- Icon Box -->
 				<div class="col-lg-4 icon_box_col">
 					<div class="icon_box">
-						<div class="icon_box_image"><img src="images/icon_1.svg" alt=""></div>
+						<div class="icon_box_image"><%= image_tag "icon_1.svg" %></div>
 						<div class="icon_box_title">Free Shipping Worldwide</div>
 						<div class="icon_box_text">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie.</p>
@@ -248,7 +250,7 @@
 				<!-- Icon Box -->
 				<div class="col-lg-4 icon_box_col">
 					<div class="icon_box">
-						<div class="icon_box_image"><img src="images/icon_2.svg" alt=""></div>
+						<div class="icon_box_image"><%= image_tag "icon_2.svg" %></div>
 						<div class="icon_box_title">Free Returns</div>
 						<div class="icon_box_text">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie.</p>
@@ -259,7 +261,7 @@
 				<!-- Icon Box -->
 				<div class="col-lg-4 icon_box_col">
 					<div class="icon_box">
-						<div class="icon_box_image"><img src="images/icon_3.svg" alt=""></div>
+						<div class="icon_box_image"><%= image_tag "icon_3.svg" %></div>
 						<div class="icon_box_title">24h Fast Support</div>
 						<div class="icon_box_text">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie.</p>
