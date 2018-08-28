@@ -33,6 +33,8 @@ gem 'bootstrap', '~> 4.1.3'
 
 gem "font-awesome-rails"
 
+gem 'isotope-rails', '~> 2.2', '>= 2.2.2'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
