@@ -4,7 +4,7 @@ class CreateOrders < ActiveRecord::Migration[5.2]
       t.belongs_to :user, index: true
       t.belongs_to :invoice, index: true
       t.belongs_to :product, index: true
-      t.timestamps 
+      t.timestamps
     end
   end
 end
