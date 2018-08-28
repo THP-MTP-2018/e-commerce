@@ -31,6 +31,8 @@ gem 'popper_js', '~> 1.14.3'
 
 gem 'bootstrap', '~> 4.1.3'
 
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5'
+
 gem "font-awesome-rails"
 
 gem 'isotope-rails', '~> 2.2', '>= 2.2.2'
