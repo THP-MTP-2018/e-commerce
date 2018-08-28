@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'admin/dashboard'
+
   devise_for :admins
   devise_for :users
 
@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   get 'checkout', to: 'home#checkout'
   get 'product', to: 'home#product'
   get 'contact', to: 'home#contact'
+  get 'dashboard', to: 'admin#dashboard'
 
 end
