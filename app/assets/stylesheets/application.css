@@ -14,9 +14,8 @@
  *= require_tree .
  *= require_self
  */
- @import "bootstrap-sprockets";
+
  @import "bootstrap";
- @import "font-awesome";
  @import url("css/cart_responsive.css");
  @import url("css/cart.css");
  @import url("css/categories_responsive.css");
