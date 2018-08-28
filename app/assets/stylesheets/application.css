@@ -28,8 +28,11 @@
  @import url("css/product_responsive.css");
  @import url("css/product.css");
  @import url("css/responsive.css");
+ @import 'owlcarousel2/owl.carousel';
 
- .avds_xl_background
- {
- 	background-image: url(<%= asset_path 'avds_xl.jpg' %>);
- }
+
+.titre-ecommerce{
+  margin-top: 12%;
+  margin-bottom: 5%;
+  text-align: center;
+}
