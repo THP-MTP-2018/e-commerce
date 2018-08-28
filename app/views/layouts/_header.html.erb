@@ -7,29 +7,11 @@
 							<div class="logo"><a href="#">Sublime.</a></div>
 							<nav class="main_nav">
 								<ul>
-									<li class="hassubs active">
-										<a href="index.html">Home</a>
-										<ul>
-											<li><a href="categories.html">Categories</a></li>
-											<li><a href="product.html">Product</a></li>
-											<li><a href="cart.html">Cart</a></li>
-											<li><a href="checkout.html">Check out</a></li>
-											<li><a href="contact.html">Contact</a></li>
-										</ul>
-									</li>
-									<li class="hassubs">
-										<a href="categories.html">Categories</a>
-										<ul>
-											<li><a href="categories.html">Category</a></li>
-											<li><a href="categories.html">Category</a></li>
-											<li><a href="categories.html">Category</a></li>
-											<li><a href="categories.html">Category</a></li>
-											<li><a href="categories.html">Category</a></li>
-										</ul>
-									</li>
-									<li><a href="#">Accessories</a></li>
-									<li><a href="#">Offers</a></li>
-									<li><a href="contact.html">Contact</a></li>
+									<li><%= link_to "Accueil", root_path %></li>
+									<li><%= link_to "Catégories", categories_path %></li>
+									<li><%= link_to "Produits", product_path %></li>
+									<li><%= link_to "Contact", contact_path %></li>
+									<li><%= link_to "Compte", root_path %></li>
 								</ul>
 							</nav>
 							<div class="header_extra ml-auto">
