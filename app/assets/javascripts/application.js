@@ -19,7 +19,7 @@
 //= require js/jquery-3.2.1.min
 //= require js/product
 //= require plugins/easing/easing.js
-//= require plugins/isotope/isotope.pkgd.min.js
+ //= require isotope
 //= require plugins/greensock/animation.gsap.min.js
 //= require plugins/greensock/ScrollToPlugin.min.js
 //= require plugins/greensock/TimelineMax.min.js
