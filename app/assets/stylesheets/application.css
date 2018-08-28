@@ -28,3 +28,8 @@
  @import url("css/product_responsive.css");
  @import url("css/product.css");
  @import url("css/responsive.css");
+
+ .avds_xl_background
+ {
+ 	background-image: url(<%= asset_path 'avds_xl.jpg' %>);
+ }
