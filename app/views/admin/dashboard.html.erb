@@ -4,15 +4,37 @@
 
 <div class="admin_panel">
 
+  <h2>Ajout de produits</h2>
 
+  <%= form_for(@items) do |f| %>
 
+    <div class="field">
+      <%= f.label :nom %><br />
+      <%= f.text_field :name_article %>
+    </div>
+    <div class="field">
+      <%= f.label :images %><br />
+      <%= f.text_field :img %>
+    </div>
+    <div class="field">
+      <%= f.label :prix %><br />
+      <%= f.number_field :price %>
+    </div>
 
+    <div class="field">
+      <%= f.label :categories %><br />
+      <%= f.number_field :category_id %>
+    </div>
 
+    <div class="field">
+      <%= f.label :promotions %><br />
+      <%= f.number_field :promotion_id %>
+    </div>
 
-
-
-
-
+    <div class="actions">
+      <%= f.submit "Ajout" %>
+    </div>
+  <% end %>
 
 
 
@@ -28,7 +50,7 @@
 
 
 
-<% end %>
+<% else %>
 
 <h2>Merci de vous connectez.</h2>
 
