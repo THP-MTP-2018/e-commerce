@@ -4,6 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.1'
 
 gem 'faker'
+
 gem 'jquery-rails'
 
 gem 'pry'
@@ -38,8 +39,6 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5'
 gem "font-awesome-rails"
 
 gem 'isotope-rails', '~> 2.2', '>= 2.2.2'
-
-gem 'owlcarousel2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
