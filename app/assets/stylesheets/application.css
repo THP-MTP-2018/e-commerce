@@ -16,7 +16,7 @@
  */
 
  @import "bootstrap";
- 
+
  @import url("css/cart_responsive.css");
  @import url("styles/cart.css");
  @import url("css/categories_responsive.css");
@@ -29,7 +29,6 @@
  @import url("css/product_responsive.css");
  @import url("css/product.css");
  @import url("css/responsive.css");
- @import 'owlcarousel2/owl.carousel';
  @import url("styles/signup_user.css");
  @import url("styles/dashboard.css");
 
