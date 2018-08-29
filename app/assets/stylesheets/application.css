@@ -18,7 +18,7 @@
  @import "bootstrap";
  @import "bootstrap-sprockets";
  @import url("css/cart_responsive.css");
- @import url("css/cart.css");
+ @import url("styles/cart.css");
  @import url("css/categories_responsive.css");
  @import url("css/categories.css");
  @import url("css/checkout_responsive.css");
