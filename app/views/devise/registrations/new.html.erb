@@ -1,5 +1,8 @@
 
-<div class="signup">
+<div class="wrap-content">
+
+
+
 <h2>Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -39,3 +42,6 @@
 <% end %>
 </div>
 
+<%= render "devise/shared/links" %>
+
+</div>

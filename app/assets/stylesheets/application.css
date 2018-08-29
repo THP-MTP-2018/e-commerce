@@ -31,9 +31,17 @@
  @import url("css/responsive.css");
  @import 'owlcarousel2/owl.carousel';
  @import url("styles/signup_user.css");
+ @import url("styles/dashboard.css");
 
 .titre-ecommerce{
   margin-top: 12%;
   margin-bottom: 5%;
   text-align: center;
+}
+
+
+.wrap-content{
+  margin-top: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
 }

@@ -4,15 +4,24 @@
 				<div class="row">
 					<div class="col">
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
-							<div class="logo"><%= link_to "Subline.", root_path %></div>
+							<div class="logo"> <img src="https://png.icons8.com/nolan/96/000000/compact-camera.png"></div>
 							<nav class="main_nav">
 								<ul>
 									<li><%= link_to "Accueil", root_path %></li>
-									<li><%= link_to "Catégories", categories_path %></li>
+									<li><%= link_to "Produits", produits_path %></li>
 
 									<li><%= link_to "Contact", contact_path %></li>
-									<li><%= link_to "Compte", root_path %></li>
-									<li><%= link_to('Logout', destroy_user_session_path, method: :delete) %></li>
+									<% if user_signed_in? %>
+									  <li>
+									  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+									  </li>
+										<li>Bonjour, <%= current_user.first_name %>
+									<% else %>
+									  <li>
+									  <%= link_to('Login', new_user_session_path)  %>
+									  </li>
+									<% end %>
+
 								</ul>
 							</nav>
 							<div class="header_extra ml-auto">
