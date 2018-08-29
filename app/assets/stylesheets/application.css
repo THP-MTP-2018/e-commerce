@@ -30,7 +30,7 @@
  @import url("css/product.css");
  @import url("css/responsive.css");
  @import 'owlcarousel2/owl.carousel';
-
+ @import url("styles/signup_user.css");
 
 .titre-ecommerce{
   margin-top: 12%;
