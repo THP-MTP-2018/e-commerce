@@ -10,10 +10,7 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
-    @order = current_order
-    @order_item = @order.order_items.new(order_item_params)
-    @order.save
-    session[:order_id] = @order.id
+    
 
   end
 
@@ -77,7 +74,4 @@ class ProductsController < ApplicationController
       params.require(:product).permit(:title, :image, :price, :description)
     end
 
-    def order_item_params
-      params.require(:order_item).permit(:product_id)
-    end
 end
