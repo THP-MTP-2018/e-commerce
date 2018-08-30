@@ -10,11 +10,8 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
-    @order = current_order
-    @order_item = @order.order_items.new(order_item_params)
-    @order.save
-    session[:order_id] = @order.id
-
+    @products = Product.all
+    @order_item = current_order.order_items.new
   end
 
   # GET /products/new
@@ -75,9 +72,5 @@ class ProductsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
       params.require(:product).permit(:title, :image, :price, :description)
-    end
-
-    def order_item_params
-      params.require(:order_item).permit(:product_id)
     end
 end
