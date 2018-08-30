@@ -1,19 +1,20 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
-
-  def initialize
-    @product = Product.all
-  end
   # GET /products
   # GET /products.json
   def index
-    @product = Product.all
+    @products = Product.all
   end
 
   # GET /products/1
   # GET /products/1.json
   def show
+    @order = current_order
+    @order_item = @order.order_items.new(order_item_params)
+    @order.save
+    session[:order_id] = @order.id
+
   end
 
   # GET /products/new
@@ -73,6 +74,10 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :image, :price, :description)
+      params.require(:product).permit(:title, :image, :price, :description)
+    end
+
+    def order_item_params
+      params.require(:order_item).permit(:product_id)
     end
 end

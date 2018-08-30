@@ -55,7 +55,7 @@
 						<div class="product">
 							<div class="product_image"><%= image_tag pro.image %> </div>
 							<div class="product_content">
-								<div class="product_title"><a href="product.html"><%= pro.name %></a></div>
+								<div class="product_title"><%= link_to pro.title, pro %></div>
 								<div class="product_price"><%= pro.price %></div>
 							</div>
 						</div>
