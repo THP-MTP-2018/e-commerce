@@ -9,7 +9,7 @@ h2{
 	font-size: 30px;
     font-weight: 700;
     color: #1b1b1b;
-    transition: all 200ms ease; 
+    transition: all 200ms ease;
 }
 
 input, optgroup, select, textarea {
@@ -27,7 +27,7 @@ input, optgroup, select, textarea {
 }
 .action{
 	display: block;
-	margin-top:12px; 
+	margin-top:12px;
     position: relative;
     font-size: 16px;
     font-weight: 600;
@@ -35,7 +35,7 @@ input, optgroup, select, textarea {
     color: #1b1b1b;
     background: none;
     z-index: 1;
-    transition: all 200ms ease; 
+    transition: all 200ms ease;
 }
 [type=submit]{
 	color: black;

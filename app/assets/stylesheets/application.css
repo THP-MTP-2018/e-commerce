@@ -16,19 +16,18 @@
  */
 
  @import "bootstrap";
-
- @import url("css/cart_responsive.css");
+ @import url("styles/cart_responsive.css");
  @import url("styles/cart.css");
- @import url("css/categories_responsive.css");
- @import url("css/categories.css");
- @import url("css/checkout_responsive.css");
- @import url("css/checkout.css");
- @import url("css/contact_responsive.css");
- @import url("css/contact.css");
- @import url("css/main_styles.css");
- @import url("css/product_responsive.css");
- @import url("css/product.css");
- @import url("css/responsive.css");
+ @import url("styles/categories_responsive.css");
+ @import url("styles/categories.css");
+ @import url("styles/checkout_responsive.css");
+ @import url("styles/checkout.css");
+ @import url("styles/contact_responsive.css");
+ @import url("styles/contact.css");
+ @import url("styles/main_styles.css");
+ @import url("styles/product_responsive.css");
+ @import url("styles/product.css");
+ @import url("styles/responsive.css");
  @import url("styles/signup_user.css");
  @import url("styles/dashboard.css");
 

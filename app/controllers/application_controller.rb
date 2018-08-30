@@ -1,4 +1,10 @@
 class ApplicationController < ActionController::Base
+<<<<<<< HEAD
+
+
+
+include ApplicationHelper
+=======
 	 protect_from_forgery with: :exception
   before_action :configure_permitted_parameters, if: :devise_controller?
   before_action :store_user_location!, if: :storable_location?
@@ -24,4 +30,5 @@ class ApplicationController < ActionController::Base
   def after_sign_in_path_for(resource_or_scope)
     stored_location_for(resource_or_scope) || super
   end
+>>>>>>> fbfb7b5cae70472604be4b9c045d07710e5c8e30
 end
