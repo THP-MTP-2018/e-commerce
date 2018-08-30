@@ -41,12 +41,19 @@
 
 					<div class="product_grid">
 
-						<% @product.each do|pro| %>
+						<% @product.each do |pro| %>
 						<div class="product">
 							<div class="product_image"><%= image_tag pro.image %> </div>
 							<div class="product_content">
 								<div class="product_title"><%= link_to pro.title, pro %></div>
+
+								<%= form_for(@order_item) do |f| %>
 								<div class="product_price"><%= pro.price %></div>
+								<br>
+		              <%= f.hidden_field :product_id, value: pro.id %>
+									<%= f.text_field :quantity, value: 1, min: 1, class: 'form-control' %>
+		              <%= f.submit "Ajouter au panier", class: 'btn btn-primary btn-sm' %>
+		            <% end %>
 							</div>
 						</div>
 						<%end%>
