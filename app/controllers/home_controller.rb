@@ -3,10 +3,6 @@ class HomeController < ApplicationController
     @product = Product.all
   end
 
-  def cart
-
-  end
-
   def categories
     @product = Product.all
     @order_item = current_order.order_items.new
