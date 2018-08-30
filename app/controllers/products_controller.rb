@@ -1,20 +1,19 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
-  # attr_accessor :productss
+
 
   def initialize
-    @productss = Product.all
+    @product = Product.all
   end
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+    @product = Product.all
   end
 
   # GET /products/1
   # GET /products/1.json
   def show
-     @product = Product.all
   end
 
   # GET /products/new

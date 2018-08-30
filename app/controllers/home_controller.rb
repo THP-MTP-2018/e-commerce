@@ -8,7 +8,7 @@ class HomeController < ApplicationController
   end
 
   def categories
-
+    @product = Product.all
   end
 
   def checkout
@@ -20,7 +20,7 @@ class HomeController < ApplicationController
   end
 
   def product
-
+    @product = Product.all
   end
 
 end
