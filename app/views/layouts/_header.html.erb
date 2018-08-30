@@ -15,10 +15,12 @@
 
 									  <li>
 									  <%= link_to('Logout', destroy_user_session_path, method: :delete) %> 
+									  	Bonjour <%= current_user.first_name %>
 									  </li>
 									<% elsif  admin_signed_in? %>									 
 										<li>
 									  <%= link_to('Logout', destroy_admin_session_path, method: :delete) %> 
+									  	Bonjour <%= current_admin.first_name %>
 									  </li>
 
 									<% else %>
