@@ -1,5 +1,5 @@
 
-<% if current_admin %>
+<% if admin_signed_in? %>
 
 
 <div class="admin_panel">
@@ -7,7 +7,7 @@
 
 <h1>Bonjour, <%= current_admin.first_name %> </h1>
 
-
+hey
 
 
 
@@ -20,6 +20,6 @@
 
 <% else %>
 
-<h2>Merci de vous connectez.</h2>
+<h2>Vous n'etes pas admin</h2>
 
 <% end %>
