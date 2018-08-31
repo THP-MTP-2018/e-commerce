@@ -43,7 +43,7 @@ Adresse de Facturation</div>
 								<div>
 									<!-- City / Town -->
 									Ville*
-									<%= f.text_field :zip_code, id:"checkout_city", class:"checkout_input", required: true %>
+									<%= f.text_field :city, id:"checkout_city", class:"checkout_input", required: true %>
 								</div>
 								<div>
 									<!-- Phone no -->
@@ -54,6 +54,23 @@ Adresse de Facturation</div>
 									<!-- Email -->
 									Email*
 									<%= f.text_field :email, id:"checkout_email", class:"checkout_input", required: true %>
+								</div>
+
+								<div class="field">
+									<%= f.label :password %>
+									<% if @minimum_password_length %>
+									<em>(<%= @minimum_password_length %> characters minimum)</em>
+									<% end %><br />
+									<%= f.password_field :password, autocomplete: "new-password" %>
+								</div>
+
+								<div class="field">
+									<%= f.label :password_confirmation %><br />
+									<%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+								</div>
+
+								<div class="actions">
+									<%= f.submit "Sign up" %>
 								</div>
 								<% end %>
 								<!-- </form> -->
@@ -67,7 +84,7 @@ Adresse de Facturation</div>
 					<div class="order checkout_section">
 						<div class="section_title">Votre commande</div>
 						<div class="section_subtitle">Détails de votre commande</div>
-
+												<br><br><br><br>
 						<!-- Order details -->
 						<div class="order_list_container">
 							<div class="order_list_bar d-flex flex-row align-items-center justify-content-start">
@@ -85,12 +102,11 @@ Adresse de Facturation</div>
 								</li>
 							</ul>
 						</div>
-
+						<br><br><br><br>
 						<!-- Order Text -->
 						<div class="order_text">
 							N'oubliez pas de vérifier votre boite e-mail suite au paiement de votre commande, notamment la catégorie "SPAM".<br>	<br>
 							N'hésitez pas à nous contacter pour toute question !</div>
-						<div class="button order_button"><a href="#">Place Order</a></div>
 					</div>
 				</div>
 			</div>

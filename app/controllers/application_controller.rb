@@ -1,8 +1,5 @@
 class ApplicationController < ActionController::Base
 
-
-
-
 include ApplicationHelper
 
 	 protect_from_forgery with: :exception
@@ -13,7 +10,11 @@ include ApplicationHelper
 
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up) { |u| u.permit(:first_name, :last_name, :email, :password, :password_confirmation) }
-    devise_parameter_sanitizer.permit(:account_update) { |u| u.permit(:first_name,:last_name, :email, :password, :current_password) }
+    # devise_parameter_sanitizer.permit(:account_update) { |u| u.permit(:first_name,:last_name, :adress, :zip_code, :city, :phone_number, :email, :password, :current_password) }
+
+		  devise_parameter_sanitizer.permit(:account_update, keys: [:adress, :zip_code, :city, :phone_number])
+
+    # devise_parameter_sanitizer.permit(:checkout) { |u| u.permit(:first_name, :last_name, :adress, :zip_code, :city, :phone_number, :email, :password, :password_confirmation) }
   end
 
   private
